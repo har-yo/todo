@@ -1,0 +1,75 @@
+<html>
+	<head>
+	<title>A simple Todo list app</title>
+	<script type="text/javascript" src="a/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<link rel="stylesheet" type="text/css" href="a/css/bootstrap.min.css">
+	<script type="text/javascript" src="a/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+	<div class="page-container">
+		<div class="header">
+			<div class="head-content">
+				<div class="right-content pull-right">
+					<span class="search-note">
+						<input type="text" class="form-control pull-left" id="search" placeholder="Search note..." onkeyup="search(this);" />
+					</span>
+					<a class="btn btn-addNote btn-sm add-noote pull-right" onclick="showAddNoteModal();"><i class="icon-plus-sign"></i> &nbsp;Add Note</a>
+				</div>
+				<div class="logo">
+					<span class="bigText">TODO</span> 
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="notes-container">
+				<span class="empty-msg">Start by clicking add note on top right!!!</span>
+			</div>
+
+		</div>
+
+	</div>
+	<div id="haryoLogo">
+	    <div class="haryo">
+	        <div title="" data-toggle="tooltip" class="haryoCircle" data-original-title="haryo">
+	        </div>
+	    </div>
+	</div>
+	<div id="AddNoteModal" class="modal fade" tabindex="-1">
+		<div  class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+					<span class="modal_heading">Add Note</span>
+				</div>
+				<div class="modal-body">
+					<span id="addNoteError" class="text-danger pull-right"></span>
+					<div>
+						<input id="noteTitle" class="form-control" placeholder="Title"></input>
+					</div>
+					<div>
+						<textarea id="noteDescription" class="form-control" placeholder="Description.."></textarea>
+					</div>
+					<table style="width:100%;margin-top:10px;">
+					<tr><td>Category: </td>
+					<td>
+						<select id="noteCategory">
+							<option value="">None</option>
+							<option value="office">Office</option>
+							<option value="personal">Personal</option>
+							<option value="imp">Important</option>
+						</select>
+						</td>
+						</tr>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button id="markerButton"  class="btn btn-sm btn-primary" type="button" aria-hidden="true" onclick="submitAddNote();">Add</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

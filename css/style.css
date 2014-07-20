@@ -1,0 +1,100 @@
+body{
+	background-color: #bdbdbd;
+}
+.header {	
+	height:60px;
+	background-color:#01a9db;
+	width: 100% ;
+}
+.head-content {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.empty-msg {
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px 3px #888888;
+}
+.right-content {
+	margin-top: 15px;
+	width:400px;
+}
+.cat-list {
+	margin-left: 20px;
+}
+#search {
+	width: 160px;
+}
+.bigText {
+    color: white;
+    font-size: 43px;
+    font-weight: 600;
+}
+.btn-addNote {
+	background-color: #01a9db;
+	color: #f4f4f4;
+}
+#noteDescription {
+	margin-top: 15px;
+}
+.btn-addNote:hover {
+	color: white
+}
+.note {
+    box-shadow: 2px 2px 3px #888888;
+    height: 140px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    width: 255px;
+    float: left;
+    margin: 5px;
+    background-color: #f3f781;
+}
+.notes-container {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 1100px;
+}
+.note-title {
+font-size: 16px;
+}
+.note-desc {
+	max-height: 95px;
+	overflow: auto;
+	padding: 5px;
+}
+.noteRight {
+	font-size: 15px;
+	font-weight: 600;
+	
+	margin-top: -14px;
+	margin-right: -6px;
+}
+.removeNote:hover, .updateNote:hover{
+	color: #393939 !important; 
+}
+.removeNote,.updateNote{
+	cursor: pointer;
+	outline: none;
+	text-decoration: none !important;
+	color: #888888 !important;
+
+}
+.updateNote {
+	font-size: 12px;
+	margin-right: 5px;
+}
+.noteLeft {
+    font-size: 10px;
+    margin-top: -15px;
+}
